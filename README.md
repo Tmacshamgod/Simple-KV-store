@@ -8,6 +8,7 @@ Things that can be improved:
 3. Eviction policy and expiration time on keys and values. We can use LRU algorithm to evict the least recently used data, because the data is more likely to be accessed again if it's recently accessed.
 4. Scale our key value store. We can choose the round robin algorithm to request a server or even consistent hashing for dealing with adding more machines or server-crashes.
 
+```
 Set key "field1": http://localhost:8080/set/name?value=Gideon
 {
     "name": {
@@ -45,3 +46,4 @@ Clear all : http://localhost:8080/clear
     "data": {
     }
 }
+```
